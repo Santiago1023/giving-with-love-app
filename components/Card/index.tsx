@@ -20,7 +20,7 @@ const ProductCard = ({url, price, title}: ProductCardProps) => {
     //         <span className='text-black font-bold'>{title}</span>
     //     </div>
     // </div>
-    <div className='debug shadow-lg'>
+    <div className='shadow-lg transform hover:scale-105 transition'>
         <div className='relative w-[170px] h-[240px] sm:w-[200px] sm:h-[270px]'>
             <Image src={url} alt={url} fill={true}/>
         </div>

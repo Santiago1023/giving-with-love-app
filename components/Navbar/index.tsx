@@ -9,10 +9,10 @@ const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
 
   return (
-    <header className=' w-full shadow-xl'>
+    <header className='w-full shadow-xl'>
         
       <nav className='flex justify-between px-7 sm:px-10 py-3 bg-white'>
-          <Link className=' flex items-center gap-2' href='/'>
+          <Link className=' flex items-center gap-2 transform hover:scale-105 transition' href='/'>
               <Image className='' src={'/gwl.png'} alt='Giving with love' width={70} height={70}/>
               <h1 className=' text-lg text-blue-2 hover:text-blue-1 font-bold'>Giving with love</h1>
           </Link>
@@ -21,8 +21,7 @@ const Navbar = () => {
                 <NavbarLink href="/shop" title="Shop"/>
                 <NavbarLink href="/shop" title="ShopShop"/>
             </ul>
-            <Link className=' inline-flex items-center justify-center text-lg rounded-full relative h-10 w-10' href='/cart'>
-                
+            <Link className=' inline-flex items-center justify-center text-lg rounded-full relative h-10 w-10 transform hover:scale-105 transition' href='/cart'>
                 <MdShoppingCart className='text-black'/>
                 <span className='absolute h-5 w-5 -top-1.5 -right-1.5 inline-flex items-center justify-center gap-1 rounded-full bg-pink-primary text-sm text-white'>
                   3
@@ -50,7 +49,7 @@ interface NavbarLinkProps {
 const NavbarLink = ({href, title}: NavbarLinkProps) => {
   const router = useRouter();
   return(
-      <li className="flex ">
+      <li className="flex transform hover:scale-110 transition">
           <Link
               className={`flex items-center py-4 
                   ${
