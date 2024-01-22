@@ -1,13 +1,17 @@
-// import { NavbarUI } from "@/components/Navbar/NavbarUI";
 
+import { HomeProductsCard } from "@/components/Card/HomeProductsCard";
+import { FooterUI } from "@/components/Footer";
 import { SliderPhotos } from "@/components/Slider";
+// import { useState } from "react";
 
-// import { Ensayo } from "@/components/ensayo";
 
 const Home = () => {
+  // const [openDialog, setOpenDialog] = useState(false);
   return (
-    <main className="flex flex-col gap-5">
+    <main className="flex flex-col gap-20">
       <SliderPhotos/>
+      <HomeProductsCard/>
+      <FooterUI/>
     </main>
   )
 }
